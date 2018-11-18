@@ -1,2 +1,0 @@
-# travis-codecov
-testing

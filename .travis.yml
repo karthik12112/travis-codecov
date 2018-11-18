@@ -12,4 +12,4 @@ script:
   - coverage run emr.py
 
 after_success:
-  - codecov --token=86909019-a300-405c-9a3f-c1e4a9a3b256
+  - codecov --token=d9f4f60b-849f-4e16-892a-2069e4527b18
