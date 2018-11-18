@@ -9,7 +9,7 @@ install:
   - pip install codecov
 
 script:
-  - coverage run emr.py
+  - coverage run tests.py
 
 after_success:
   - codecov --token=d9f4f60b-849f-4e16-892a-2069e4527b18
