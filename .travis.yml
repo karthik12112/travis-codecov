@@ -10,3 +10,8 @@ python:
 
 install:
   - docker pull jenkins
+
+script:
+  - docker pull ubuntu
+  - docker images |grep jenkins
+  - docker images |grep ubuntu
