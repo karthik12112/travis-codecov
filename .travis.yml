@@ -10,6 +10,14 @@ python:
 
 install:
   - docker pull jenkins
+  
+
+before_install:
+  - pip install boto3
+  - pip install pip --upgrade
+  - pip install awscli --upgrade
+  - pip install requests --upgrade
+  - pip install argparse --upgrade
 
 script:
   - docker pull ubuntu
