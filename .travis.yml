@@ -9,6 +9,7 @@ python:
   - 2.7
 
 install:
+  - sudo docker info
   - docker pull jenkins
   
 
@@ -18,6 +19,8 @@ before_install:
   - pip install awscli --upgrade
   - pip install requests --upgrade
   - pip install argparse --upgrade
+  - sudo service docker stop
+  - sudo nohup docker daemon -H tcp://0.0.0.0:2375 -H unix:///var/run/docker.sock &
 
 script:
   - docker pull ubuntu
